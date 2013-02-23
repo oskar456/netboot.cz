@@ -1,6 +1,13 @@
 DEFAULT vesamenu.c32
 PROMPT 0
 MENU BACKGROUND oskarotux-bg.png
+menu color title	* #FFFFFFFF *
+menu color border	* #00000000 #00000000 none
+menu color sel		* #ffffffff #76a1d0ff *
+menu color hotsel	1;7;37;40 #ffffffff #76a1d0ff *
+menu color tabmsg	* #ffffffff #00000000 *
+menu color help		37;40 #ffdddd00 #00000000 none
+
 MENU TITLE Welcome to boot.oskarcz.net
 
 LABEL bootlocal
@@ -12,5 +19,5 @@ LABEL bootlocal
 	ENDTEXT
 	localboot 0x80
 
-menu include http://dl.fedoraproject.org/pub/alt/bfo/pxelinux.cfg/default Fedora
+menu include fedora.conf Fedora
 menu include debian.conf Debian
