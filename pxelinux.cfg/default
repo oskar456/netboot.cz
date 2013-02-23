@@ -1,5 +1,6 @@
 DEFAULT vesamenu.c32
 PROMPT 0
+MENU BACKGROUND oskarotux-bg.png
 MENU TITLE Welcome to boot.oskarcz.net
 
 LABEL bootlocal
