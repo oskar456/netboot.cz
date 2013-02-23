@@ -2,7 +2,6 @@
 
 echo
 echo Booting boot.oskarcz.net for ${hostname}
-# PXELinux options, see http://syslinux.zytor.com/wiki/index.php/PXELINUX for details
 set 210:string http://boot.oskarcz.net/
 set 209:string isolinux.cfg/default
 set filename ${210:string}pxelinux.0

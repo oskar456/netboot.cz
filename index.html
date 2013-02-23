@@ -26,6 +26,10 @@ To use this boot page, point you iPXE to this URL, i.e.:
 iPXE> dhcp
 iPXE> chain http://boot.oskarcz.net
 </pre>
+This URL can be also used as DHCP filename, for instance with QEMU:
+<pre>
+$ qemu … -net user,bootfile=http://boot.oskarcz.net/
+</pre>
 </div>
 </body>
 </html>

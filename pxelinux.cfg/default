@@ -2,7 +2,7 @@ DEFAULT vesamenu.c32
 PROMPT 0
 MENU BACKGROUND oskarotux-bg.png
 menu color title	* #FFFFFFFF *
-menu color border	* #00000000 #00000000 none
+menu color border	37;40   #40ffffff #00000000
 menu color sel		* #ffffffff #76a1d0ff *
 menu color hotsel	1;7;37;40 #ffffffff #76a1d0ff *
 menu color tabmsg	* #ffffffff #00000000 *
@@ -21,3 +21,4 @@ LABEL bootlocal
 
 menu include fedora.conf Fedora
 menu include debian.conf Debian
+menu include utilities.conf Utilities
