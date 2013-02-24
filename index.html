@@ -7,7 +7,7 @@
 <style type="text/css" media="screen">
 body { background: #e7e7e7; font-family: Verdana, sans-serif; font-size: 11pt; }
 #page { background: #ffffff; margin: 50px; border: 2px solid #c0c0c0; padding: 10px; }
-#header { background: #4b6983; border: 2px solid #7590ae; text-align: center; padding: 10px; color: #ffffff; max-width:800px;}
+#header { background: #4b6983; border: 2px solid #7590ae; text-align: center; padding: 10px; color: #ffffff;}
 #header h1 { color: #ffffff; }
 #body { padding: 10px; }
 span.tt { font-family: monospace; }
@@ -21,15 +21,24 @@ a:hover { text-decoration: none; color: #C00; background: #FC0; }
 <body>
 <div id="page">
 <h1 id="header">Boot.oskarcz.net iPXE boot page</h1>
-To use this boot page, point you iPXE to this URL, i.e.:
+To use this boot page, point your iPXE to this URL, i.e.:
 <pre>
-iPXE> dhcp
-iPXE> chain http://boot.oskarcz.net
+iPXE&gt; dhcp
+iPXE&gt; chain http://boot.oskarcz.net
 </pre>
 This URL can be also used as DHCP filename, for instance with QEMU:
 <pre>
 $ qemu … -net user,bootfile=http://boot.oskarcz.net/
 </pre>
+<h2>Prebuilt binaries</h2>
+<p>There are also preconfigured binaries of iPXE for boot.oskarcz.net:</p>
+<ul>
+  <li><a href="dl/bon.iso">Hybrid CD ISO image</a></li>
+  <li><a href="dl/bon.dsk">Floppy disk image</a></li>
+  <li><a href="dl/bon.usb">USB flash disk image</a></li>
+  <li><a href="dl/bon.lkrn">Linux kernel image</a> (load with your favourite bootloader)</li>
+  <li><a href="dl/boot.oskarcz.net.ipxe">iPXE configuration file</a> (use as initrd for <a href="dl/ipxe.lkrn">vanilla iPXE kernel</a>)</li>
+</ul>
 </div>
 </body>
 </html>

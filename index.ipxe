@@ -3,7 +3,8 @@
 echo
 echo Booting boot.oskarcz.net for ${hostname}
 set 210:string http://boot.oskarcz.net/
-set 209:string isolinux.cfg/default
+set 209:string pxelinux.cfg/default
+set 208:hex f1:00:74:7e
 set filename ${210:string}pxelinux.0
 chain ${filename} ||
 echo Booting ${filename} failed, dropping to shell

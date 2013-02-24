@@ -1,0 +1,19 @@
+#!ipxe
+
+dhcp && chain http://boot.oskarcz.net/ ||
+echo
+echo DHCP failed.
+set net0/dns 8.8.8.8
+set net0/netmask 255.255.255.0
+echo Enter IPv4 address
+read net0/ip
+echo Enter IPv4 netmask
+read net0/netmask
+echo Enter IPv4 gateway
+read net0/gateway
+echo Trying to boot...
+ifopen net0 && chain http://boot.oskarcz.net/ ||
+echo Failed, dropping to shell...
+echo Setup network manually using command "config"
+echo and issue "chain http://boot.oskarcz.net/"
+shell
