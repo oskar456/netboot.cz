@@ -21,4 +21,5 @@ LABEL bootlocal
 
 menu include fedora.conf Fedora
 menu include debian.conf Debian
+menu include openbsd.conf OpenBSD
 menu include utilities.conf Utilities
