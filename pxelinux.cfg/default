@@ -28,4 +28,5 @@ menu include centos.conf CentOS
 menu include scientific.conf Scientific Linux
 menu include opensuse.conf OpenSUSE
 menu include openbsd.conf OpenBSD
+menu include freebsd.conf FreeBSD
 menu include utilities.conf Utilities
