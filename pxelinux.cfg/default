@@ -23,6 +23,7 @@ menu include fedora.conf Fedora
 menu include debian.conf Debian
 #menu include debianlive.conf Debian Live
 menu include sysrcd.conf System rescue CD
+menu include slax.conf Slax
 menu include ubuntu.conf Ubuntu Netinstall
 menu include centos.conf CentOS
 menu include scientific.conf Scientific Linux
