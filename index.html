@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Boot.oskarcz.net iPXE boot page</title>
+<title>Netboot.cz iPXE boot page</title>
 <link rel="shortcut icon" href="favicon.ico" />
 <style type="text/css" media="screen">
 body { background: #e7e7e7; font-family: Verdana, sans-serif; font-size: 11pt; }
@@ -21,15 +21,15 @@ a:hover { text-decoration: none; color: #C00; background: #FC0; }
 </head>
 <body>
 <div id="page">
-<h1 id="header">Boot.oskarcz.net iPXE boot page</h1>
+<h1 id="header">Netboot.cz iPXE boot page</h1>
 To use this boot page, point your iPXE to this URL, i.e.:
 <pre>
 iPXE&gt; dhcp
-iPXE&gt; chain http://boot.oskarcz.net
+iPXE&gt; chain http://netboot.cz/index.ipxe
 </pre>
 This URL can be also used as DHCP filename, for instance with QEMU:
 <pre>
-$ qemu … -net user,bootfile=http://boot.oskarcz.net/
+$ qemu … -net user,bootfile=http://netboot.cz/index.ipxe
 </pre>
 <h2>Screenshots</h2>
 <div>
