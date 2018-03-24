@@ -4,7 +4,7 @@ echo
 echo Booting netboot.cz for ${hostname}
 set 210:string http://netboot.cz/
 set 209:string pxelinux.cfg/default
-set filename ${210:string}pxelinux.0
+set filename ${210:string}lpxelinux.0
 chain ${filename} ||
 echo Booting ${filename} failed, dropping to shell
 shell
