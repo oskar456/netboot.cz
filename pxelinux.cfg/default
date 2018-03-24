@@ -19,7 +19,14 @@ LABEL bootlocal
 	ENDTEXT
 	localboot 0x80
 
-menu include fedora.conf Fedora
+LABEL bootfedora
+	MENU LABEL boot.fedoraproject.org
+	TEXT HELP
+		Launch Fedora project boot menu.
+		Warning: There is no way back.
+	ENDTEXT
+	KERNEL pxechn.c32 http://dl.fedoraproject.org/pub/alt/bfo/pxelinux.0 -p http://dl.fedoraproject.org/pub/alt/bfo/ -c pxelinux.cfg/default
+
 menu include debian.conf Debian
 #menu include debianlive.conf Debian Live
 menu include sysrcd.conf System rescue CD
