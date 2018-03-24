@@ -1,6 +1,6 @@
 DEFAULT vesamenu.c32
 PROMPT 0
-MENU BACKGROUND oskarotux-bg.png
+MENU BACKGROUND netboot.png
 menu color title	* #FFFFFFFF *
 menu color border	37;40   #40ffffff #00000000
 menu color sel		* #ffffffff #76a1d0ff *
@@ -8,7 +8,7 @@ menu color hotsel	1;7;37;40 #ffffffff #76a1d0ff *
 menu color tabmsg	* #ffffffff #00000000 *
 menu color help		37;40 #ffdddd00 #00000000 none
 
-MENU TITLE Welcome to boot.oskarcz.net
+MENU TITLE Welcome to netboot.cz
 
 LABEL bootlocal
 	MENU DEFAULT
